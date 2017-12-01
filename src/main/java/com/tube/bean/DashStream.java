@@ -3,6 +3,8 @@ package com.tube.bean;
 import java.util.List;
 
 public class DashStream {
+	
+	private String title;
 	private String quality;
 	private String itag;
 	private String type;
@@ -10,6 +12,7 @@ public class DashStream {
 	private String container;
 	private List<String> src;
 	private String size;
+	
 	public String getQuality() {
 		return quality;
 	}
@@ -51,6 +54,12 @@ public class DashStream {
 	}
 	public void setSrc(List<String> src) {
 		this.src = src;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	
 }
